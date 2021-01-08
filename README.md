@@ -1,4 +1,4 @@
-$git clone https://raffaelemassa.github.io/rafmassa.github.io/.
+git clone https://github.com/RaffaeleMassa/rafmassa.github.io
 $cd rafmassa.github.io
 $echo "RaffaeleMassa" > raffaelemassa.html
 $git add --all
