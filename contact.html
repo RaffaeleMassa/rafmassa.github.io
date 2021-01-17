@@ -3,6 +3,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sophia">
@@ -16,21 +17,17 @@
     <link rel="stylesheet" href="./src/js/bootstrap-italia.js">
     <style media="screen">
 
-    body,h1,h2,h3,h4,h5,h6 {
-      font-family: 'sofia', serif;
+    h1,h2,h3,h4,h5,h6 {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+  
+    margin: 0px;
     }
-
-    .w3-sofia {
-     font-family: 'Sofia', cursive;
-    }
-
-    .w3-Tangerine{
-       font-family: 'Tangerine', serif;
-    }
+   
 
     h1 {
       position:relative;
-      padding: 130px;
+      padding: 100px;
       text-align: center;
       font-size: 80px;
       justify-content: flex-start;
@@ -195,21 +192,15 @@
 
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary mb-3">
-        <div class="container-fluid">
-            <a href="#" class="navbar-brand mr-3">Raffaele Massa</a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav">
-                    <a href="raffaelemassa.html" class="nav-item nav-link active">Home</a>
-                    <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
-                    <a href="biografia.html" class="nav-item nav-link">About Me</a>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
-                </div>
-
-
+    <input type="radio" class="chisono" id="about">
+    <input type="radio" class="portfolio" id="photo" >
+    <input type="radio" class="contact" id="contact-me">
+    <div class="wrapper">
+      <img src="https://i.ibb.co/kc79Z22/logo-sito.png" />
+      <a href="homepage.html"><label for="chisono">CHI SONO</label></a>
+      <a href="portfolio.html"><label for="portfolio">PORTFOLIO</label></a>
+      <a href="contact.html"><label for="contact">CONTACT ME</label></a>
+    </div>
 
             </div>
         </div>
@@ -219,8 +210,9 @@
 
 
       <h1 class="w3-center w3-animate-top w3-Tangerine">Tell Me Your Project</h1>
-      <p class="w3-center w3-animate-bottom w3-sofia">You have a project in your mind but you don't know how to develop it,<br> if you wish we can work together and create your dream.<br> From the simplest website to the most diverse applications, contact me.<br>
-      These are my socials:</p>
+      <p class="w3-center w3-animate-bottom w3-sofia">Hai un progetto in mente non sai come svilupparlo contattami!<br>
+        Realizzerò dal più semplice sito web alle svariate applicazioni.<br>
+        Puoi conttattarmi sui miei Social::</p>
       <ul class="w3-display-bottommiddle">
   <li>
     <a href="https://www.facebook.com/raffaele.massa.52">
