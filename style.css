@@ -30,8 +30,8 @@
     padding: 30px 30px;
     display: inline-flex;
     align-items: center;
-    border-right: 1px solid lightgrey;
-    font-weight: 500;
+    border-right:  1 px solid lightgrey;
+    font-weight: 300;
     color: #a9a9a9;
   }
   label:hover {
@@ -76,7 +76,7 @@
   .container {
     height: calc(100vh - 50px);
     overflow: auto;
-    padding: 25px;
+    padding: 5px;
     background-color: #f0f0f0;
   
   }
@@ -144,7 +144,7 @@
     
   }
   .left > img {
-    width: 150px;
+    width: 300px;
   }
   
   .name {
