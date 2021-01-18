@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
   }
+
+
+
+
   body {
     font-family: "Poppins", sans-serif;
     font-size: 18px;
@@ -11,24 +15,31 @@
   }
   .information {
     flex: 1;
-    overflow: auto;
+    overflow: hidden;
     background-color: white;
+    
+   
+
   }
   
   img {
     width: 80px;
+    
   }
   .wrapper {
     display: flex;
     background-color: #fff;
     box-shadow: 0 0 2px 2px #ddd;
+    
   }
   input {
     display: none;
   }
   label {
     padding: 30px 30px;
-    display: inline-flex;
+    display: grid;
+    width: 100%;
+    align-content: center;
     align-items: center;
     border-right:  1 px solid lightgrey;
     font-weight: 300;
@@ -40,6 +51,7 @@
   
   .items {
     display: flex;
+    grid-template-columns: 80px 200px auto 40px;
     align-items: center;
     background-color: grey;
   }
@@ -49,23 +61,18 @@
     padding:40px;
   }
   
-  @keyframes about {
+  @keyframes chisono {
     100% {
       transform: translateY(0);
     }
   }
   
-  @keyframes songs {
+  @keyframes portfolio {
     100% {
       transform: translateY(-100%);
     }
   }
   
-  @keyframes code {
-    100% {
-      transform: translateY(-200%);
-    }
-  }
   
   @keyframes contact {
     100% {
@@ -76,15 +83,17 @@
   .container {
     height: calc(100vh - 50px);
     overflow: auto;
-    padding: 5px;
+    padding: 10px;
     background-color: #f0f0f0;
-  
   }
+    
+  
+  
   
   .inner {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 95%;
     height: 100%;
    
   }
@@ -98,29 +107,22 @@
   
   }
   
-  #about:checked ~ .container .inner {
+  #chisono:checked ~ .container .inner {
     transform: translateY(0);
-  }
-  
-  #code:checked ~ .container .inner {
-    transform: translateY(-200%);
   }
   
   #contact:checked ~ .container .inner {
     transform: translateY(-300%);
   }
   
-  #songs:checked ~ .container .inner {
+  #portfolio:checked ~ .container .inner {
     transform: translateY(-100%);
   }
   
-  #about:checked ~ .container .inner .h0 {
+  #chisono:checked ~ .container .inner .h0 {
    opacity:1;
   }
-  #songs:checked ~ .container .inner .h1 {
-   opacity:1;
-  }
-  #code:checked ~ .container .inner .h2 {
+  #portfolio:checked ~ .container .inner .h1 {
    opacity:1;
   }
   #contact:checked ~ .container .inner .h3 {
@@ -128,7 +130,7 @@
   }
   .h0 {
     background-size: cover;
-    overflow: hidden;
+    overflow: scroll;
     display: flex;
   }
   .h1 {
@@ -145,14 +147,15 @@
   }
   .left > img {
     width: 300px;
+    max-width: 100%;
   }
   
   .name {
     margin-top: -10px;
     color: rgb(53, 172, 48);
   }
-  .department {
-    margin-top: -20px;
+  .studio {
+    margin-top: -10px;
     color: #020202;
     font-size: 14px;
     letter-spacing: 1px;
@@ -292,7 +295,7 @@
     background-image: linear-gradient(top, #66b3cc, #5da3ba);
   }
   
-  @-moz-keyframes English {
+  @keyframes English {
     0% {
       width: 0px;
     }
@@ -300,7 +303,7 @@
       width: 100%;
     }
   }
-  @-moz-keyframes Spanish{
+  @keyframes Spanish{
     0% {
       width: 0px;
     }
@@ -308,7 +311,7 @@
       width: 90%;
     }
   }
-  @-moz-keyframes Chinese {
+  @keyframes Chinese {
     0% {
       width: 0px;
     }
@@ -316,7 +319,7 @@
       width: 80%;
     }
   }
-  @-moz-keyframes HTML-CSS {
+  @keyframes HTML-CSS {
     0% {
       width: 0px;
     }
@@ -325,7 +328,7 @@
     }
   }
   
-  @-webkit-keyframes English {
+  @keyframes English {
     0% {
       width: 0px;
     }
@@ -333,7 +336,7 @@
       width: 100%;
     }
   }
-  @-webkit-keyframes Spanish {
+  @keyframes Spanish {
     0% {
       width: 0px;
     }
@@ -341,7 +344,7 @@
       width: 90%;
     }
   }
-  @-webkit-keyframes Chinese {
+  @keyframes Chinese {
     0% {
       width: 0px;
     }
@@ -349,7 +352,7 @@
       width: 80%;
     }
   }
-  @-webkit-keyframes HTML-CSS {
+  @keyframes HTML-CSS {
     0% {
       width: 0px;
     }
@@ -392,6 +395,7 @@
   left:0;
   z-index:0;
   transition: all 0.4s ease-out;
+  max-width: 100%;
 }
 .tile .text
 {
@@ -437,6 +441,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 .tile:hover img
 {
   opacity: 0.2;
+  max-width: 100%;
 }
 .tile:hover .animate-text
 {
