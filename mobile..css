@@ -1,0 +1,52 @@
+@media only screen and (max-width: 768px) {
+.label {
+    width: 100%;
+    display: flex;
+
+}
+.container {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    
+}
+.wrap {
+    width: 100%;
+}
+.skills{
+    width: 80%;
+    display: block;
+}
+#skill{
+    width: 80%;
+    display: block;
+}
+
+
+.English{
+    width: 100%;
+    display: block;
+    
+    
+}
+.Spanish{
+    width: 90%;
+    display: block;
+}
+.Chinese{
+    width: 80%;
+    display: block;
+}
+.HTML-CSS{
+    width: 65%;
+    display: block;
+}
+.wrap2 {
+    width: 100%;
+    display: block;
+}
+.text{
+    width: 100%;
+    display: block;
+}
+}
